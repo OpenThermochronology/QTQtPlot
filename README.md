@@ -3,6 +3,6 @@ This Jupyter notebook is designed to take the raw time-temperature (t-T) output 
 
 Many thanks go to C. Brenhin Keller for code contributions.
 
-## NOTE: Deep-time QTQt models with multiple thermochronometers over billion year+ time span(s): TLDR--run them for a long, long time. Convergence on the stable posterior is difficult to assess, so a rule of thumb would be 500k to 1M burn in iterations and >500k to >1M post burn in iterations. If you see 'multi-modal' behavior or bifurcation in thermal history solutions then you likely need to run QTQt longer.
+### NOTE: Deep-time QTQt models with multiple thermochronometers over billion year+ time span(s): TLDR--run them for a long, long time. Convergence on the stable posterior is difficult to assess, so a rule of thumb would be 500k to 1M burn in iterations and >500k to >1M post burn in iterations. If you see 'multi-modal' behavior or bifurcation in thermal history solutions then you likely need to run QTQt longer.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kmcdannell/QTQtPlot.git/main?filepath=%2FQTQtPlot.ipynb)
