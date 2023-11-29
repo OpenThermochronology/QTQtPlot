@@ -1,7 +1,7 @@
 # QTQtPlot
 This Jupyter notebook is designed to take the raw time-temperature (t-T) output file from the QTQt thermal history modelling software of [Gallagher (2012)](https://doi.org/10.1029/2011JB008825) and replot the output as an image displaying t-T path density. So in these plots, relative probability is proportional to t–T path density, where darker colors (or higher saturation) denotes higher posterior probability. Any t-T constraint boxes that were utilized during modelling can be plotted along with individual 'representative' model solutions (i.e., the maximum likehood or expected models). The example QTQt output file used here is from Figure 3a in [McDannell and Issler (2021)](https://doi.org/10.5194/gchron-3-321-2021). Many thanks go to Brenhin Keller for code contributions.
 
-**Please read the Jupyter plotting intructions**
+**Please read the Jupyter plotting instructions**
 
 Right now the code only handles single samples and cannot deal with vertical sample profiles. The way QTQt does this internally is to plot the normal model posterior paths output (i.e., for the highest elevation sample) and then adds the model offset value (the value between each t-T pair in the main QTQt output file) to each Temp. value. This gives you the "hotter" or lower elevation sample.
 
