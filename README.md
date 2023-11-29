@@ -5,8 +5,8 @@ This Jupyter notebook is designed to take the raw time-temperature (t-T) output 
 
 Right now the code only handles single samples and cannot deal with vertical sample profiles. The way QTQt does this internally is to plot the normal model posterior paths output (i.e., for the highest elevation sample) and then adds the model offset value (the value between each t-T pair in the main QTQt output file) to each Temp. value. This gives you the "hotter" or lower elevation sample.
 
-_NOTE: Deep-time QTQt models with multiple thermochronometers over 500 My to billion year+ time span(s)--TLDR--run them for a long, long time._ 
+_NOTE: Deep-time QTQt models with multiple thermochronometers over 500 My to billion year+ time span(s)--TL;DR--run them for a long, long time._ 
 
-_Convergence on the stable posterior is difficult to assess, so a rule of thumb would be 500k to 1M burn in iterations and >500k to >1M post burn in iterations. If you see 'multi-modal' t-T behavior, ragged-looking inflections or bifurcation in the thermal history solutions within a specific region(s) of t-T space (i.e., at a turning point between heating and cooling)---then you likely need to run QTQt longer. Of course the likelihood chain can also be monitored to give a sense of convergence. Another clue that a model run was too short is when the 95% credible interval on the expected or mode model paths is very rough and not smooth._
+_Convergence on the stable posterior is difficult to assess, so a rule of thumb would be 500k to 1M burn in iterations and >500k to >1M post burn in iterations. If you see 'multi-modal' t-T behavior, ragged-looking inflections or bifurcation in the thermal history solutions within a specific region(s) of t-T space (i.e., at a turning point between heating and cooling)---then you likely need to run QTQt longer. Of course the likelihood chain can also be monitored to give a sense of convergence._
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kmcdannell/QTQtPlot.git/main?filepath=%2FQTQtPlot.ipynb)
